@@ -37,6 +37,7 @@ class FutureProviderPage extends StatelessWidget {
                 data: (val) => Text(
                   val.title,
                   style: Theme.of(ctx).textTheme.headline4,
+                  textAlign: TextAlign.center,
                 ),
                 error: (er, stack) => Text('$er'),
                 loading: () => const CircularProgressIndicator(),
